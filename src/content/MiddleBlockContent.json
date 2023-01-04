@@ -1,6 +1,5 @@
 {
-    "title": "Introduce your product quickly & effectively",
-    "text": "Landy comes with multi-lingual support, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in developing web applications using React.js.",
-    "button": "Get started"
-  }
-  
+  "title": "About",
+  "text": "TokenStream is an A.I.-driven Web3 infrastructure platform. TokenStream combines on-chain and off-chain data into custom dashboards, reporting, notifications, and more.",
+  "button": "Get started"
+}
