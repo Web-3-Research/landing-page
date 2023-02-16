@@ -50,7 +50,7 @@ export const Burger = styled("div")`
   display: none;
 
   svg {
-    fill: #2e186a;
+    fill: #191d3e;
   }
 `;
 
@@ -101,4 +101,34 @@ export const Span = styled("span")`
     text-underline-position: under;
     text-decoration: rgb(255, 130, 92) wavy underline;
   }
+`;
+
+export const Language = styled("h4")`
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #18216d;
+
+  @media screen and (max-width: 414px) {
+    padding: 1.5rem 0;
+  }
+`;
+
+
+export const LanguageSwitch = styled("div")<any>`
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+`;
+
+export const LanguageSwitchContainer = styled("div")`
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
 `;

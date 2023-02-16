@@ -1,4 +1,10 @@
 {
-  "title": "That's about it!",
-  "text": "If you are familiar with React, or SPA frameworks in general, there shouldn't be any confusing parts about this template. if not, you can always reach out to me and I'll try me best to answer your questions."
+  "title": "Our Solution",
+  "text": "Our platform combines on-chain and off-chain data with AI-assisted tooling to provide customized resources and insights tailored to your specific needs. Whether you want to find information, perform on-chain actions, or follow trends and wallets, Web3 Research has you covered. And as you use the platform, it will adapt to your preferences to provide a truly personalized experience. ",
+  "button": [
+    {
+      "title": "Demo Coming Soon",
+      "color": "#fff"
+    }
+  ]
 }

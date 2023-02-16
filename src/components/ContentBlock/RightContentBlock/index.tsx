@@ -10,7 +10,6 @@ import {
   ContentWrapper,
   ButtonWrapper,
 } from "./styles";
-
 const RightBlock = ({
   title,
   content,
@@ -25,6 +24,7 @@ const RightBlock = ({
       behavior: "smooth",
     });
   };
+
   return (
     <RightBlockContainer>
       <Fade direction="right">
@@ -45,13 +45,14 @@ const RightBlock = ({
                       >
                         {t(item.title)}
                       </Button>
+                      
                     );
                   })}
               </ButtonWrapper>
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+          <SvgIcon src={icon} width="100%" height="100%" />
           </Col>
         </Row>
       </Fade>

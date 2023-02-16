@@ -1,16 +1,5 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
-  "section": [
-    {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
-    },
-    {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
-    }
-  ]
+  "title": "The Problem",
+  "text": "One of the main challenges facing users of web3 technologies is the complexity of the web3 space and the lack of tools to help them find and use the information they need. Many existing solutions either provide too much irrelevant information or not enough useful information, and there is often no easy way to act on the information that is provided. ",
+  "icon": ""
 }
