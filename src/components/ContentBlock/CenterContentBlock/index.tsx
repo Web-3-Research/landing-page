@@ -52,7 +52,8 @@ const CenterBlock = ({
         </Row>
       </Fade>
     </CenterBlockContainer>
-  );
+  ) as React.ReactElement;
 };
 
-export default withTranslation()(CenterBlock);
+
+export default CenterBlock

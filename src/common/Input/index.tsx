@@ -1,9 +1,17 @@
 import { withTranslation } from "react-i18next";
 import { Container, StyledInput } from "./styles";
 import { Label } from "../TextArea/styles";
-import { InputProps } from "../types";
 
-const Input = ({ name, placeholder, onChange, t }: InputProps) => (
+interface InputProps {
+  name: string;
+  placeholder: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  type?: string;
+  t?: any;
+  error?: string;
+}
+
+const Input = ({ name, placeholder, onChange, t, error }: InputProps & { t: any }) => (
   <Container>
     <Label htmlFor={name}>{t(name)}</Label>
     <StyledInput

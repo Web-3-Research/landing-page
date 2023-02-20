@@ -1,7 +1,8 @@
+import React from "react";
+import { withTranslation, WithTranslation } from "react-i18next";
 import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../../common/SvgIcon";
-import { ContentBlockProps } from "../types";
+import { LeftContentBlockProps } from "../types";
 import { Fade } from "react-awesome-reveal";
 import {
   LeftContentSection,
@@ -12,14 +13,14 @@ import {
   MinPara,
 } from "./styles";
 
-const LeftContentBlock = ({
+const LeftContentBlock: React.FC<LeftContentBlockProps> = ({
   icon,
   title,
   content,
   section,
-  t,
   id,
-}: ContentBlockProps) => {
+  t,
+}: LeftContentBlockProps) => {
   return (
     <LeftContentSection>
       <Fade direction="left">
@@ -31,20 +32,19 @@ const LeftContentBlock = ({
             <ContentWrapper>
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
-              <ServiceWrapper>
-                <Row justify="space-between">
-                  {typeof section === "object" &&
-                    section.map((item: any, id: number) => {
-                      return (
-                        <Col key={id} span={11}>
-                          <SvgIcon src={item.icon} width="60px" height="60px" />
-                          <MinTitle>{t(item.title)}</MinTitle>
-                          <MinPara>{t(item.content)}</MinPara>
-                        </Col>
-                      );
-                    })}
-                </Row>
-              </ServiceWrapper>
+              {Array.isArray(section) && section.length > 0 && (
+                <ServiceWrapper>
+                  {section.map((item: any, idx: number) => {
+                    return (
+                      <div key={idx}>
+                        <MinTitle>{t(item.title)}</MinTitle>
+                        <MinPara>{t(item.content)}</MinPara>
+                      </div>
+                    );
+                  }
+                  )}
+                </ServiceWrapper>
+              )}
             </ContentWrapper>
           </Col>
         </Row>
@@ -53,4 +53,5 @@ const LeftContentBlock = ({
   );
 };
 
-export default withTranslation()(LeftContentBlock);
+
+export default LeftContentBlock

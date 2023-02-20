@@ -1,4 +1,3 @@
-import { withTranslation } from "react-i18next";
 import { Container, TextWrapper, Content } from "./styles";
 
 interface Props {
@@ -7,7 +6,7 @@ interface Props {
   t: any;
 }
 
-const Block = ({ title, content, t }: Props) => {
+const Block: React.FC<Props> = ({ title, content, t }) => {
   return (
     <Container>
       <h6>{t(title)}</h6>
@@ -18,4 +17,4 @@ const Block = ({ title, content, t }: Props) => {
   );
 };
 
-export default withTranslation()(Block);
+export default Block;

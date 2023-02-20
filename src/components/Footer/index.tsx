@@ -1,5 +1,5 @@
 import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
+import { withTranslation, WithTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 import i18n from "i18next";
@@ -16,8 +16,9 @@ import {
   LanguageSwitchContainer,
 } from "./styles";
 
+interface Props extends WithTranslation {}
 
-const Footer = ({ t }: any) => {
+const Footer = ({ t }: Props) => {
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
   };
@@ -29,11 +30,10 @@ const Footer = ({ t }: any) => {
           <Row justify="space-between">
           </Row>
           <Row justify="space-between">
-          <Col lg={10} md={10} sm={12} xs={12}>
+            <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
               <Large to="/">{t("Feel free to reach out!")}</Large>
-              <Para>
-              </Para>
+              <Para>{/* add content here */}</Para>
               <a id="contact" href="mailto:contact@web3r.tech">
                 <Chat>{t(`contact@web3r.tech`)}</Chat>
               </a>
@@ -63,7 +63,6 @@ const Footer = ({ t }: any) => {
           </Row>
         </Container>
       </FooterSection>
-      
     </>
   );
 };

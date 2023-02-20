@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
+import { useTranslation } from "react-i18next";
 import { withTranslation } from "react-i18next";
+
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
@@ -16,8 +18,9 @@ import {
   Span,
 } from "./styles";
 
-const Header = ({ t }: any) => {
+const Header = () => {
   const [visible, setVisibility] = useState(false);
+  const { t } = useTranslation();
 
   const showDrawer = () => {
     setVisibility(!visible);
@@ -73,7 +76,12 @@ const Header = ({ t }: any) => {
             <Outline />
           </Burger>
         </Row>
-        <Drawer closable={false} visible={visible} onClose={onClose}>
+        <Drawer
+            closable={false}
+            open={visible}
+            onClose={onClose}
+            getContainer={false}
+          >
           <Col style={{ marginBottom: "2.5rem" }}>
             <Label onClick={onClose}>
               <Col span={12}>
@@ -90,5 +98,4 @@ const Header = ({ t }: any) => {
     </HeaderSection>
   );
 };
-
-export default withTranslation()(Header);
+export default Header;

@@ -1,3 +1,4 @@
+import React from "react";
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../../common/SvgIcon";
@@ -10,14 +11,17 @@ import {
   ContentWrapper,
   ButtonWrapper,
 } from "./styles";
-const RightBlock = ({
+
+type RightContentBlockProps = ContentBlockProps;
+
+const RightContentBlock: React.FC<RightContentBlockProps> = ({
   title,
   content,
   button,
   icon,
   t,
   id,
-}: ContentBlockProps) => {
+}) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -35,24 +39,23 @@ const RightBlock = ({
               <Content>{t(content)}</Content>
               <ButtonWrapper>
                 {typeof button === "object" &&
-                  button.map((item: any, id: number) => {
+                  button.map((item: any, idx: number) => {
                     return (
                       <Button
-                        key={id}
+                        key={idx}
                         color={item.color}
                         fixedWidth={true}
                         onClick={() => scrollTo("about")}
                       >
                         {t(item.title)}
                       </Button>
-                      
                     );
                   })}
               </ButtonWrapper>
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
-          <SvgIcon src={icon} width="100%" height="100%" />
+            <SvgIcon src={icon} width="100%" height="100%" />
           </Col>
         </Row>
       </Fade>
@@ -60,4 +63,4 @@ const RightBlock = ({
   );
 };
 
-export default withTranslation()(RightBlock);
+export default RightContentBlock
