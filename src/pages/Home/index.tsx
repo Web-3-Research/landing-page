@@ -51,11 +51,6 @@ const Home = () => {
         id="team"
       />
       <Team /> 
-      {/* <Contact
-        title={ContactContent.title}
-        content={ContactContent.text}
-        id="contact"
-      /> */}
     </Container>
   );
 };

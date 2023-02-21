@@ -5,20 +5,20 @@ import Container from "../../common/Container";
 import i18n from "i18next";
 import {
   FooterSection,
-  Title,
   Para,
   Large,
   Chat,
-  Empty,
   Language,
   Label,
   LanguageSwitch,
   LanguageSwitchContainer,
 } from "./styles";
 
-interface Props extends WithTranslation {}
+interface Props extends WithTranslation {
+  children?: React.ReactNode;
+}
 
-const Footer = ({ t }: Props) => {
+const Footer: React.FC<Props & WithTranslation> = ({ t }: Props & WithTranslation) => {
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
   };

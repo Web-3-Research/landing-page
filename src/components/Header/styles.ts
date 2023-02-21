@@ -117,7 +117,8 @@ export const Language = styled("h4")`
 export const LanguageSwitch = styled("div")<any>`
   cursor: pointer;
   transition: all 0.1s ease-in-out;
-
+  display: inline-block;
+  margin-right: .5rem;
   &:hover,
   &:active,
   &:focus {
@@ -128,7 +129,6 @@ export const LanguageSwitch = styled("div")<any>`
 `;
 
 export const LanguageSwitchContainer = styled("div")`
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
-  width: 85px;
 `;
