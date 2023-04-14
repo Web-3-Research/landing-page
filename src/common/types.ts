@@ -1,7 +1,9 @@
 export interface ContainerProps {
   border?: boolean;
+  fullWidth?: boolean;
   children: React.ReactNode;
 }
+
 
 export interface ButtonProps {
   color?: string;
