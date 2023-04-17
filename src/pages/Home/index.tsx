@@ -6,6 +6,7 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import Team from "../../components/Team";
 import Infographic from "../../components/Infographic/Infographic";
+import Infographic2 from "../../components/Infographic2/Infographic2";
 
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
@@ -41,7 +42,15 @@ const Home = () => {
         />
       </Container>
       <Container fullWidth>
+
         <Infographic />
+        <MiddleBlock 
+          title={MiddleBlockContent.title}
+          content={MiddleBlockContent.text}
+          id = "middleBlock"
+          bgColor="#D1E2DD"
+        />
+        <Infographic2 />
       </Container>
     </>
   );

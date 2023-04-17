@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
-export const MiddleBlockSection = styled("section")`
+export const MiddleBlockSection = styled("section")<{ bgColor?: string }>`
   position: relative;
   padding: 7.5rem 0 3rem;
   text-align: center;
   display: flex;
   justify-content: center;
+  background-color: ${props => props.bgColor};
 
   @media screen and (max-width: 1024px) {
     padding: 5.5rem 0 3rem;
   }
 `;
+
+
 
 export const Content = styled("p")`
   padding: 0.75rem 0 0.75rem;

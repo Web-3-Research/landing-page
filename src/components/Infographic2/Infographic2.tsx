@@ -3,9 +3,9 @@ import { Parallax } from 'react-parallax';
 // Import the CSS module
 import styles from './Infographic.module.css';
 
-import infographicImage from '../../img/svg/infographic2.png';
+import infographicImage from '../../img/svg/Infographic3.png';
 
-const Infographic: React.FC = memo(() => {
+const Infographic2: React.FC = memo(() => {
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -63,4 +63,4 @@ const Infographic: React.FC = memo(() => {
   );
 });
 
-export default Infographic;
+export default Infographic2;
