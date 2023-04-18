@@ -11,14 +11,17 @@ export const LeftContentSection = styled("section")`
 
 export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
+  padding-right: 1rem; /* Add this line to set right padding */
 `;
 
 export const ContentWrapper = styled("div")`
   position: relative;
   max-width: 540px;
-
+  margin: 0 auto; /* Add this line to center the content */
+   padding-left: 1rem; 
+  
   @media only screen and (max-width: 575px) {
-    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 `;
 
