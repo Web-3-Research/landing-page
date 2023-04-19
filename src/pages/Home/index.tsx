@@ -2,6 +2,7 @@ import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
+import InfographicContent from "../../content/Infographic.json";
 import MissionContent from "../../content/MissionContent.json";
 import Infographic from "../../components/Infographic/Infographic";
 // import Infographic2 from "../../components/Infographic2/Infographic2";
