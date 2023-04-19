@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 400,
     margin: "0 auto",
     padding: theme.spacing(3),
+    paddingBottom: theme.spacing(2),
     borderRadius: theme.shape.borderRadius,
     boxShadow: theme.shadows[3],
     backgroundColor: theme.palette.background.paper,
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   textField: {
     marginBottom: theme.spacing(2),
   },
-  submitButton: {
+  customButton: {
     textTransform: "none",
     fontWeight: 600,
   },
@@ -49,6 +50,7 @@ const EmailSignup: React.FC = () => {
   };
 
   return (
+    
     <form className={classes.form} onSubmit={handleSubmit}>
       <TextField
         className={classes.textField}
@@ -60,13 +62,13 @@ const EmailSignup: React.FC = () => {
         disabled={isSubmitted}
       />
       <Button
-        className={classes.submitButton}
+        className={classes.customButton}
         type="submit"
         variant="contained"
         color="primary"
         disabled={isSubmitted}
       >
-        Subscribe
+        Join Waitlist
       </Button>
       {message && (
         <Typography className={classes.message} variant="body2" color="textSecondary">

@@ -1,25 +1,36 @@
 import { createStyles, makeStyles } from "@material-ui/core/styles";
 
-export const useStyles = makeStyles(() =>
+export const darkColor = "#18216d";
+
+export const useStyles = makeStyles((theme) =>
   createStyles({
-    root: {
-      flexGrow: 1,
-    },
-    header: {
-      backgroundColor: "rgba(0, 0, 0, 0.75)",
-      color: "white",
-    },
-    title: {
-      flexGrow: 1,
-      display: "none",
-    },
-    body: {
-      minHeight: "100vh",
+    form: {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      backgroundColor: "#f5f5f5",
+      width: "100%",
+      maxWidth: 400,
+      margin: "0 auto",
+      padding: theme.spacing(3),
+      borderRadius: theme.shape.borderRadius,
+      boxShadow: theme.shadows[3],
+      backgroundColor: theme.palette.background.paper,
+    },
+    textField: {
+      marginBottom: theme.spacing(2),
+    },
+    customButton: {
+      textTransform: "none",
+      fontWeight: 600,
+      backgroundColor: darkColor,
+      color: theme.palette.primary.contrastText,
+      "&:hover": {
+        backgroundColor: theme.palette.primary.dark,
+      },
+    },
+    message: {
+      marginTop: theme.spacing(1),
     },
   })
 );

@@ -29,14 +29,14 @@ const Home = () => {
           title={MissionContent.title}
           content={MissionContent.text}
           icon="complex1.png"
-          id="mission"
+          id="about"
         />
         <ContentBlock
           type="left"
           title={AboutContent.title}
           content={AboutContent.text}
           icon="logo.svg"
-          id="about"
+          id="mission"
         />
       </Container>
       <Container fullWidth>
@@ -46,7 +46,7 @@ const Home = () => {
           title={MiddleBlockContent.title}
           content={MiddleBlockContent.text}
           id = "middleBlock"
-          bgColor="#F4F4F3"
+          bgColor="#ffffff"
         />
       <EmailSignup />
       </Container>

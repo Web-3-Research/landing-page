@@ -4,7 +4,7 @@ import XHR from "i18next-xhr-backend";
 
 import translationEn from "./locales/en/translation.json";
 import translationCn from "./locales/cn/translation.json";
-
+import translationKr from "./locales/kr/translation.json";
 i18n
   .use(XHR)
   .use(LanguageDetector)
@@ -24,6 +24,9 @@ i18n
       },
       cn: {
         translations: translationCn,
+      },
+      kr: {
+        translations: translationKr,
       },
     },
     ns: ["translations"],

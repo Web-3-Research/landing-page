@@ -51,9 +51,9 @@ const Header = () => {
         <CustomNavLinkSmall onClick={() => scrollTo("solution")}>
           <Span>{t("Product")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("team")}>
+        {/* <CustomNavLinkSmall onClick={() => scrollTo("team")}>
           <Span>{t("Team")}</Span>
-        </CustomNavLinkSmall>
+        </CustomNavLinkSmall> */}
         <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}
@@ -74,6 +74,14 @@ const Header = () => {
                 <LanguageSwitch onClick={() => handleChange("cn")}>
                   <SvgIcon
                     src="hk.svg"
+                    aria-label="homepage"
+                    width="30px"
+                    height="30px"
+                  />
+                </LanguageSwitch>
+                <LanguageSwitch onClick={() => handleChange("kr")}>
+                  <SvgIcon
+                    src="kr.svg"
                     aria-label="homepage"
                     width="30px"
                     height="30px"

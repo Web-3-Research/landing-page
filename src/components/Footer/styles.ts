@@ -27,8 +27,16 @@ export const NavLink = styled(Link)`
   &:focus {
     color: #15418e;
   }
-`;
+`;export const LegalLink = styled.span`
+color: #18216d;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
 
+&:hover {
+  text-decoration: underline;
+}
+`;
 export const Extra = styled("section")`
   background: rgb(241, 242, 243);
   position: relative;
@@ -86,6 +94,17 @@ export const Empty = styled("div")`
   position: relative;
   height: 53px;
 `;
+export const Copyright = styled.p`
+  font-size: 14px;
+  color: #18216d;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  @media screen and (max-width: 414px) {
+    padding-top: 10px;
+  }
+`;
 
 export const FooterContainer = styled("div")`
   max-width: 510px;
@@ -108,7 +127,8 @@ export const FooterContainer = styled("div")`
 
   @media screen and (max-width: 769px) {
     width: auto;
-
+    flex-direction: row;
+    flex-wrap: wrap;
     a:not(:last-child) {
       display: none;
     }
@@ -126,15 +146,7 @@ export const FooterContainer = styled("div")`
   }
 `;
 
-export const Language = styled("h4")`
-  font-size: 22px;
-  text-transform: capitalize;
-  color: #18216d;
 
-  @media screen and (max-width: 414px) {
-    padding: 1.5rem 0;
-  }
-`;
 
 export const Label = styled("label")`
   font-size: 22px;
@@ -150,10 +162,22 @@ export const Label = styled("label")`
   }
 `;
 
+export const Language = styled("h4")`
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #18216d;
+
+  @media screen and (max-width: 414px) {
+    padding: 1.5rem 0;
+  }
+`;
+
+
 export const LanguageSwitch = styled("div")<any>`
   cursor: pointer;
   transition: all 0.1s ease-in-out;
-
+  display: inline-block;
+  margin-right: .5rem;
   &:hover,
   &:active,
   &:focus {
@@ -164,7 +188,6 @@ export const LanguageSwitch = styled("div")<any>`
 `;
 
 export const LanguageSwitchContainer = styled("div")`
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
-  width: 85px;
 `;

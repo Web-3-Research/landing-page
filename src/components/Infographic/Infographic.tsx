@@ -31,11 +31,11 @@ const Infographic: React.FC = memo(() => {
   }, [updateDimensions]);
 
   return (
-    <Parallax bgImage={infographicImage} strength={275}>
+    <Parallax bgImage={infographicImage} strength={300}>
 
       <div className={styles.container}>
       <div className={styles.heading1} style={{ top: '0%', left: '0%' }}>
-          <h5>The 'Swiss Army Knife of Web3'</h5>
+          <h3>The 'Swiss Army Knife of Web3'</h3>
         </div>
         <br />
         <div className={styles.textBox} style={{ top: '5%', left: '0%' }}>

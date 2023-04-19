@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import { Row, Col } from "antd";
 import { withTranslation, WithTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 import i18n from "i18next";
+import LegalPopup from "./LegalPopup";
 import {
   FooterSection,
   Para,
@@ -12,6 +14,8 @@ import {
   Label,
   LanguageSwitch,
   LanguageSwitchContainer,
+  LegalLink,
+  Copyright,
 } from "./styles";
 
 interface Props extends WithTranslation {
@@ -19,8 +23,18 @@ interface Props extends WithTranslation {
 }
 
 const Footer: React.FC<Props & WithTranslation> = ({ t }: Props & WithTranslation) => {
+  const [isLegalPopupVisible, setIsLegalPopupVisible] = useState(false);
+
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
+  };
+
+  const handleLegalPopupOpen = () => {
+    setIsLegalPopupVisible(true);
+  };
+
+  const handleLegalPopupClose = () => {
+    setIsLegalPopupVisible(false);
   };
 
   return (
@@ -31,16 +45,13 @@ const Footer: React.FC<Props & WithTranslation> = ({ t }: Props & WithTranslatio
           </Row>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Feel free to reach out!")}</Large>
-              <Para>{/* add content here */}</Para>
-              <a id="contact" href="mailto:contact@web3r.tech">
-                <Chat>{t(`contact@web3r.tech`)}</Chat>
-              </a>
+              <LegalLink onClick={handleLegalPopupOpen}>{t("Legal")}</LegalLink>
+              <LegalPopup onClose={handleLegalPopupClose} isVisible={isLegalPopupVisible} />
+
             </Col>
 
             <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
+              {/* <Label htmlFor="select-lang">{t("Language")}</Label> */}
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
                   <SvgIcon
@@ -58,10 +69,23 @@ const Footer: React.FC<Props & WithTranslation> = ({ t }: Props & WithTranslatio
                     height="30px"
                   />
                 </LanguageSwitch>
+                <LanguageSwitch onClick={() => handleChange("kr")}>
+                  <SvgIcon
+                    src="kr.svg"
+                    aria-label="homepage"
+                    width="30px"
+                    height="30px"
+                  />
+                </LanguageSwitch>
               </LanguageSwitchContainer>
+              <Col lg={4} md={4} sm={12} xs={12}>
+              
+            </Col>
+
             </Col>
           </Row>
         </Container>
+        <Copyright>{t("Web3 Research Limited © 2023. All rights reserved.")}</Copyright>
       </FooterSection>
     </>
   );
