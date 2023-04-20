@@ -1,20 +1,41 @@
 {
-    "title": "The 'Swiss Army Knife of Web3'",
-    "textBox1": {
+  "title": "Your AI Concierge for the Web3 Ecosystem",
+  "blocks": [
+    {
       "heading": "Dynamic",
-      "text": "Our platform adapts and evolves with users' needs, unlike static tools from other companies."
+      "text": "Our platform adapts and evolves with users' needs, unlike static tools from other companies.",
+      "position": {
+        "top": "5%",
+        "left": "0%",
+        "id": "dynamic"
+      }
     },
-    "textBox2": {
+    {
       "heading": "Actionable",
-      "text": "We enable on-chain actions through AI-integrated smart contracts, ensuring a more interactive experience."
+      "text": "We enable on-chain actions through AI-integrated smart contracts, ensuring a more interactive experience.",
+      "position": {
+        "top": "20%",
+        "left": "35%",
+        "id": "actionable"
+      }
     },
-    "textBox3": {
+    {
       "heading": "Multi-Modal",
-      "text": "Other companies only use a single source of data. Web3r combines multiple on-chain and off-chain sources, utilizing proprietary AI models for diverse tasks and outputs."
+      "text": "Other companies only use a single source of data. Web3r combines multiple on-chain and off-chain sources, utilizing proprietary AI models for diverse tasks and outputs.",
+      "position": {
+        "top": "65%",
+        "left": "1%",
+        "id": "multi-modal"
+      }
     },
-    "textBox4": {
+    {
       "heading": "Simple",
-      "text": "Leveraging LLMs, we provide data tailored to users' understanding levels, avoiding unnecessary jargon and complex charts."
+      "text": "Leveraging LLMs, we provide data tailored to users' understanding levels, avoiding unnecessary jargon and complex charts.",
+      "position": {
+        "top": "70%",
+        "left": "35%",
+        "id": "simple"
+      }
     }
-  }
-  
+  ]
+}

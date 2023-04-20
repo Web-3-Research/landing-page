@@ -4,7 +4,7 @@ import { withTranslation, WithTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 import i18n from "i18next";
-import LegalPopup from "./LegalPopup";
+import LegalPopup from "../Legal/LegalPopup";
 import {
   FooterSection,
   Para,

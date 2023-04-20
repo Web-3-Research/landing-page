@@ -6,12 +6,16 @@ export interface ContainerProps {
 
 
 export interface ButtonProps {
-  color?: string;
+  color?: "default" | "primary" | "secondary";
   fixedWidth?: boolean;
-  name?: string;
+  onClick?: (event?: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  type?: string;
   children: React.ReactNode;
-  onClick?: () => void;
+  className?: string;
+  disabled?: boolean; // Add 'disabled' property as optional
 }
+
+
 
 export interface SvgIconProps {
   src: string;

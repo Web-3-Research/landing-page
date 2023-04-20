@@ -48,18 +48,15 @@ const Header = () => {
         <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("solution")}>
+        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
           <Span>{t("Product")}</Span>
         </CustomNavLinkSmall>
-        {/* <CustomNavLinkSmall onClick={() => scrollTo("team")}>
-          <Span>{t("Team")}</Span>
-        </CustomNavLinkSmall> */}
         <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}
         >
           <Span>
-            <Button>{t("Contact")}</Button>
+            <Button onClick={() => scrollTo("middleBlock")}>{t("Contact")}</Button>
           </Span>
         </CustomNavLinkSmall>
         <LanguageSwitchContainer>
@@ -107,23 +104,26 @@ const Header = () => {
           </Burger>
         </Row>
         <Drawer
-            closable={false}
-            open={visible}
-            onClose={onClose}
-            getContainer={false}
-          >
-          <Col style={{ marginBottom: "2.5rem" }}>
-            <Label onClick={onClose}>
-              <Col span={12}>
-                <Menu>Menu</Menu>
-              </Col>
-              <Col span={12}>
-                <Outline />
-              </Col>
-            </Label>
-          </Col>
-          <MenuItem />
-        </Drawer>
+  width={window.innerWidth > 576 ? '50%' : '100%'}
+  closable={false}
+  visible={visible}
+  onClose={onClose}
+  placement="right"
+  zIndex={999}
+>
+  <Col style={{ marginBottom: "2.5rem" }}>
+    <Label onClick={onClose}>
+      <Col span={12}>
+        <Menu>{t("Menu")}</Menu>
+      </Col>
+      <Col span={12}>
+        <Outline />
+      </Col>
+    </Label>
+  </Col>
+  <MenuItem />
+</Drawer>
+
       </Container>
     </HeaderSection>
   );

@@ -44,7 +44,7 @@ const CenterBlock = ({
                       key={id}
                       color={item.color}
                       fixedWidth={true}
-                      onClick={() => scrollTo("about")}
+                      onClick={() => scrollTo("middleBlock")}
                     >
                       {t(item.title)}
                     </Button>

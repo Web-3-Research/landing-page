@@ -1,6 +1,6 @@
 {
   "Mission": "使命",
-  "Product": "产品",
+  "Product": "產品",
   "Team": "团队",
   "Contact": "联系",
   "Your Personalized Web3 AI Assistant": "您的個性化 Web3 人工智能助手",
@@ -11,7 +11,62 @@
   "The 'Swiss Army Knife of Web3'": "“Web3 的瑞士軍刀”",
   "An AI-powered assistant that simplifies and streamlines user interactions with the decentralized web, making it more accessible, user-friendly, and efficient. Whether you want to find information, perform on-chain actions, or follow trends and wallets, Web3 Research has you covered. And as you use the platform, it will adapt to your preferences to provide a truly personalized experience.": "一款人工智能助手，簡化並整合了用戶與去中心化網絡的互動，使其更加易於使用、友好和高效。無論您想要查找信息、進行鏈上操作還是跟隨趨勢和錢包，Web3 Research都會為您提供幫助。隨著您使用平台，它將適應您的喜好，提供一個真正個性化的體驗。",
   "Join The Waitlist": "加入候補名單",
-"The Team": "团队",
-"Web3 Research Limited © 2023. All rights reserved": "版權所有",
-"We are at capacity for users, but we will be opening up more spots soon. Enter your email below to be notified when we do.": "我們的用戶容量已滿，但我們將很快開放更多地點。在下面輸入您的電子郵件，以便在我們這樣做時收到通知。"
-}
+  "Join Waitlist": "加入候補名單",
+  "Email Address*": "電子郵件地址*",
+  "The Team": "团队",
+  "All rights reserved": "版權所有",
+  "By joining the waitlist you agree to the Privacy Policy": "加入候補名單即表示您同意隱私政策",
+  "We are at capacity for users, but we will be opening up more spots soon. Enter your email below to be notified when we do.": "我們的用戶容量已滿，但我們將很快開放更多地點。在下面輸入您的電子郵件，以便在我們這樣做時收到通知。",
+  "Dynamic": "動態",
+  "Our platform adapts and evolves with users' needs, unlike static tools from other companies.": "我們的平臺根據使用者的需求進行調整和發展，與其他公司的靜態工具不同。",
+  "Actionable": "可行",
+  "We enable on-chain actions through AI-integrated smart contracts, ensuring a more interactive experience.": "我們通過人工智慧集成的智慧合約實現鏈上操作，確保更具互動性的體驗。",
+  "Multi-Modal": "多個數據源",
+  "Other companies only use a single source of data. Web3r combines multiple on-chain and off-chain sources, utilizing proprietary AI models for diverse tasks and outputs.": "其他公司僅使用單一數據源。Web3r 結合了多個鏈上和鏈下源，利用專有的 AI 模型執行不同的任務和輸出。",
+  "Simple": "簡單",
+  "Your AI Concierge for the Web3 Ecosystem": "您的 Web3 生態系統 AI 禮賓服務",
+  "Leveraging LLMs, we provide data tailored to users' understanding levels, avoiding unnecessary jargon and complex charts.": "利用LLM，我們提供根據使用者理解水準量身定製的數據，避免不必要的行話和複雜的圖表。",
+  "Menu": "導航",
+  "Privacy Policy": "隱私策略",
+  "Terms of Service": "服務條款",
+  "Legal Disclaimer": "法律免責聲明",
+  "Terms of Service": "服務條款",
+  "Acceptance of Terms": "接受條款",
+  "By using the services provided by Web3 Research, you agree to be bound by these Terms of Service (\"Terms\").": "使用Web3 Research提供的服務即表示您同意受這些服務條款（“條款”）的約束。",
+  "Eligibility": "資格",
+  "You must be at least 18 years old to use our services. By using our services, you represent and warrant that you meet this requirement.": "您必須年滿18歲才能使用我們的服務。使用我們的服務即表示您聲明並保證您符合此要求。",
+  "Accounts": "賬戶",
+  "To access certain features of our services, you must create an account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.": "要訪問我們服務的某些功能，您必須創建一個賬戶。您有責任保護您的賬戶憑證的保密性，以及為您賬戶下的所有活動負責。",
+  "Prohibited Uses": "禁止用途",
+  "You agree not to use our services for any unlawful or prohibited purpose. This includes, but is not limited to, using our services to facilitate fraud, money laundering, or the distribution of malware.": "您同意不將我們的服務用於任何非法或禁止的目的。這包括但不限於，使用我們的服務促成欺詐、洗錢或分發惡意軟件。",
+  "No Financial Advice": "無財務建議",
+  "Our services may provide information and tools that could be interpreted as financial advice. However, we are not a financial advisor, and any information provided by us is for informational purposes only. You should consult with a qualified professional before making any financial decisions.": "我們的服務可能提供可能被解釋為財務建議的信息和工具。但是，我們不是財務顧問，我們提供的任何信息僅供參考。在做出任何財務決策之前，您應該諮詢合格的專業人士。",
+  "Risk Disclaimer": "風險聲明",
+  "You acknowledge and agree that using our services involves risks, including the risk of financial loss. You assume all risks associated with your use of our services and agree to hold Web3 Research harmless from any losses or damages resulting from your use of our services.": "您承認並同意，使用我們的服務存在風險，包括財務損失的風險。您承擔與使用我們的服務相關的所有風險，並同意對因使用我們的服務而造成的任何損失或損害使Web3 Research免受損害。",
+  "Intellectual Property": "知識產權",
+  "All content and materials provided by Web3 Research are protected by intellectual property laws. You may not reproduce, distribute, or otherwise exploit our content without our express written permission. You are granted a limited, non-exclusive, non-transferable license to access and use our services for your personal, non-commercial purposes.": "Web3 Research提供的所有內容和材料均受知識產權法保護。未經我們的明確書面許可，您不得複制、分發或以其他方式利用我們的內容。您獲得有限的、非排他性的、不可轉讓的許可，用於訪問和使用我們的服務，僅供您個人、非商業目的。",
+  "Third-Party Links and Services": "第三方鏈接和服務",
+  "Our services may contain links to third-party websites or services that are not owned or controlled by Web3 Research. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.": "我們的服務可能包含指向非Web3 Research擁有或控制的第三方網站或服務的鏈接。我們對任何第三方網站或服務的內容、隱私政策或做法無法控制，也不承擔責任。",
+  "Termination": "終止",
+  "We reserve the right to terminate or suspend your access to our services, without prior notice or liability, for any reason, including but not limited to your violation of these Terms.": "我們保留隨時終止或暫停您訪問我們的服務的權利，無需事先通知或承擔責任，原因包括但不限於您違反了這些條款。",
+  "Indemnification": "賠償",
+  "You agree to indemnify, defend, and hold harmless Web3 Research, its affiliates, and their respective officers, directors, employees, and agents from and against any and all claims, liabilities, damages, losses, or expenses, including reasonable attorneys' fees and costs, arising out of or in any way connected with your access to or use of our services.": "您同意賠償、捍衛並使Web3 Research及其附屬公司及其各自的董事、高管、員工和代理免受損害，並承擔因您訪問或使用我們的服務而引起或以任何方式與之相關的所有索賠、責任、損害、損失或費用，包括合理的律師費和成本。",
+  "Limitation of Liability": "責任限制",
+  "In no event shall Web3 Research or its affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of our services.": "在任何情況下，Web3 Research或其附屬公司均不承擔因您訪問或使用我們的服務而導致的任何間接、附帶、特殊、衍生性或懲罰性損害賠償責任，包括但不限於利潤、數據、使用、商譽或其他無形損失的損失。",
+  "Governing Law": "管轄法律",
+  "These Terms shall be governed and construed in accordance with the laws of Hong Kong, without regard to its conflict of law provisions.": "這些條款應根據香港法律進行解釋和適用，不考慮其法律抵觸規定。",
+  "Changes to These Terms": "條款變更",
+  "We reserve the right to update or modify these Terms at any time. We will notify you of any changes by posting the updated Terms on this page. Your continued use of our services after any changes to these Terms constitutes your acceptance of the updated Terms.": "我們保留隨時更新或修改這些條款的權利。我們將通過在此頁面上發布更新後的條款來通知您任何變更。您在這些條款發生任何變更後繼續使用我們的服務，即表示您接受更新後的條款。",
+  "Contact Us": "聯繫我們",
+  "If you have any questions or concerns regarding these Terms, please contact us at contact@web3r.tech.": "如果您對這些條款有任何疑問或疑慮，請通過contact@web3r.tech與我們聯繫。"
+  }
+  
+  
+
+
+
+
+
+
+
+

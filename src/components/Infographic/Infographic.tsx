@@ -1,11 +1,20 @@
 import React, { useState, useEffect, useCallback, memo } from 'react';
 import { Parallax } from 'react-parallax';
-// Import the CSS module
 import styles from './Infographic.module.css';
+import { withTranslation } from "react-i18next";
+import infographicImage from '../../img/svg/infographic3.png';
 
-import infographicImage from '../../img/svg/infographic2.png';
+interface InfographicBlockProps {
+  id: string;
+  heading: string;
+  text: string;
+  position: {
+    top: string;
+    left: string;
+  };
+}
 
-const Infographic: React.FC = memo(() => {
+const Infographic: React.FC<{ t: any; id: string; title: string; blocks: InfographicBlockProps[] }> = memo(({ t, title, blocks }) => {
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -32,35 +41,21 @@ const Infographic: React.FC = memo(() => {
 
   return (
     <Parallax bgImage={infographicImage} strength={300}>
-
-      <div className={styles.container}>
-      <div className={styles.heading1} style={{ top: '0%', left: '0%' }}>
-          <h3>The 'Swiss Army Knife of Web3'</h3>
+    <div className={styles.container}>
+      <h3 className={styles.title}>{t(title)}</h3>
+      {blocks.map((block, index) => (
+        <div
+          key={index}
+          className={styles.textBox}
+          style={{ top: block.position.top, left: block.position.left }}
+        >
+          <h4>{t(block.heading)}</h4>
+          <p>{t(block.text)}</p>
         </div>
-        <br />
-        <div className={styles.textBox} style={{ top: '5%', left: '0%' }}>
-          <h4>Dynamic</h4>
-          <p>Our platform adapts and evolves with users' needs, unlike static tools from other companies.</p>
-        </div>
-
-        <br />
-        <div className={styles.textBox} style={{ top: '20%', left: '35%' }}>
-          <h4>Actionable</h4>
-          <p>We enable on-chain actions through AI-integrated smart contracts, ensuring a more interactive experience.</p>
-        </div>
-        <br />
-        <div className={styles.textBox} style={{ top: '65%', left: '1%' }}>
-          <h4>Multi-Modal</h4>
-          <p>Other companies only use a single source of data. Web3r combines multiple on-chain and off-chain sources, utilizing proprietary AI models for diverse tasks and outputs.</p>
-        </div>
-        <br />
-        <div className={styles.textBox} style={{ top: '70%', left: '35%' }}>
-          <h4>Simple</h4>
-          <p>Leveraging LLMs, we provide data tailored to users' understanding levels, avoiding unnecessary jargon and complex charts.</p>
-        </div>
-      </div>
-    </Parallax>
+      ))}
+    </div>
+  </Parallax>
   );
 });
 
-export default Infographic;
+export default withTranslation()(Infographic);
