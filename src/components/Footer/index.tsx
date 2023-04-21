@@ -45,7 +45,7 @@ const Footer: React.FC<Props & WithTranslation> = ({ t }: Props & WithTranslatio
           </Row>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <LegalLink onClick={handleLegalPopupOpen}>{t("Legal")}</LegalLink>
+              <LegalLink onClick={handleLegalPopupOpen}>{t("Terms of Service & Privacy Policy")}</LegalLink>
               <LegalPopup onClose={handleLegalPopupClose} isVisible={isLegalPopupVisible} />
 
             </Col>

@@ -25,8 +25,8 @@ const LegalPopup: React.FC<Props & WithTranslation> = ({ t, onClose, isVisible }
         <TabPane tab={t('Terms of Service')} key="2">
           {TOSText.map((section, index) => (
             <React.Fragment key={index}>
-              <LegalHeading>{section.title}</LegalHeading>
-              <LegalText>{section.content}</LegalText>
+              <LegalHeading>{t(section.title)}</LegalHeading>
+              <LegalText>{t(section.content)}</LegalText>
             </React.Fragment>
           ))}
         </TabPane>
@@ -34,12 +34,12 @@ const LegalPopup: React.FC<Props & WithTranslation> = ({ t, onClose, isVisible }
           <LegalText>
             {privacyPolicyText.map((section, index) => (
               <React.Fragment key={index}>
-                <h4>{section.title}</h4>
-                <p>{section.content}</p>
+                <h4>{t(section.title)}</h4>
+                <p>{t(section.content)}</p>
                 {section.list && (
                   <ul>
                     {section.list.map((item, i) => (
-                      <li key={i}>{item}</li>
+                      <li key={i}>{t(item)}</li>
                     ))}
                   </ul>
                 )}

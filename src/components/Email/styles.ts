@@ -16,10 +16,24 @@ export const useStyles = makeStyles((theme) =>
       borderRadius: theme.shape.borderRadius,
       boxShadow: theme.shadows[3],
       backgroundColor: theme.palette.background.paper,
+      outline: 'none!important',
     },
+    
+    
     textField: {
       marginBottom: theme.spacing(2),
+      '& .MuiOutlinedInput-root': {
+        border: 'none',
+        boxShadow: 'none',
+        '&:hover': {
+          boxShadow: 'none',
+        },
+        '&:focus': {
+          outline: 'none',
+        },
+      },
     },
+    
     customButton: {
       textTransform: "none",
       fontWeight: 600,
