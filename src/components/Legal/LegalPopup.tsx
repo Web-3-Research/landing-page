@@ -1,3 +1,4 @@
+
 import React from "react";
 import styled from "styled-components";
 import { Modal, Tabs } from "antd";
@@ -10,6 +11,7 @@ interface Props {
   isVisible: boolean;
 }
 
+
 const LegalPopup: React.FC<Props & WithTranslation> = ({ t, onClose, isVisible }) => {
   const TOSText = LegalContentTerms.sections;
   const privacyPolicyText = legalContentPrivacy.sections;
@@ -21,36 +23,35 @@ const LegalPopup: React.FC<Props & WithTranslation> = ({ t, onClose, isVisible }
       onCancel={onClose}
       footer={null}
     >
-      <StyledTabs defaultActiveKey="1">
-        <TabPane tab={t('Terms of Service')} key="2">
+      <StyledTabs defaultActiveKey="2">
+        <Tabs.TabPane key="2" tab={t('Terms of Service')}>
           {TOSText.map((section, index) => (
             <React.Fragment key={index}>
               <LegalHeading>{t(section.title)}</LegalHeading>
               <LegalText>{t(section.content)}</LegalText>
             </React.Fragment>
           ))}
-        </TabPane>
-        <TabPane tab={t('Privacy Policy')} key="1">
-          <LegalText>
-            {privacyPolicyText.map((section, index) => (
-              <React.Fragment key={index}>
-                <h4>{t(section.title)}</h4>
-                <p>{t(section.content)}</p>
-                {section.list && (
-                  <ul>
-                    {section.list.map((item, i) => (
-                      <li key={i}>{t(item)}</li>
-                    ))}
-                  </ul>
-                )}
-              </React.Fragment>
-            ))}
-          </LegalText>
-        </TabPane>
+        </Tabs.TabPane>
+        <Tabs.TabPane key="1" tab={t('Privacy Policy')}>
+          {privacyPolicyText.map((section, index) => (
+            <React.Fragment key={index}>
+              <h4>{t(section.title)}</h4>
+              <p>{t(section.content)}</p>
+              {section.list && (
+                <ul>
+                  {section.list.map((item, i) => (
+                    <li key={i}>{t(item)}</li>
+                  ))}
+                </ul>
+              )}
+            </React.Fragment>
+          ))}
+        </Tabs.TabPane>
       </StyledTabs>
     </StyledModal>
   );
 };
+
 
 const StyledModal = styled(Modal)`
   .ant-modal-content {
@@ -74,12 +75,6 @@ const StyledTabs = styled(Tabs)`
 
   .ant-tabs-content-holder {
     padding: 20px;
-  }
-`;
-
-const TabPane = styled(Tabs.TabPane)`
-  .ant-tabs-content {
-    padding-top: 20px;
   }
 `;
 
