@@ -17,7 +17,7 @@ const LegalPopup: React.FC<Props & WithTranslation> = ({ t, onClose, isVisible }
   return (
     <StyledModal
       title={t('Legal Disclaimers')}
-      visible={isVisible}
+      open={isVisible}
       onCancel={onClose}
       footer={null}
     >

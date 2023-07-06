@@ -20,18 +20,18 @@ import {
 } from "./styles";
 
 const Header = () => {
-  const [visible, setVisibility] = useState(false);
+  const [open, setVisibility] = useState(false);
   const { t } = useTranslation();
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
   };
 
   const showDrawer = () => {
-    setVisibility(!visible);
+    setVisibility(!open);
   };
 
   const onClose = () => {
-    setVisibility(!visible);
+    setVisibility(!open);
   };
 
   const MenuItem = () => {
@@ -106,7 +106,7 @@ const Header = () => {
         <Drawer
   width={window.innerWidth > 576 ? '50%' : '100%'}
   closable={false}
-  visible={visible}
+  open={open}
   onClose={onClose}
   placement="right"
   zIndex={999}
