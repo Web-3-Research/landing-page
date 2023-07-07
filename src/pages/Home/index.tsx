@@ -62,7 +62,7 @@ const Home = () => {
       </Container>
       <Container fullWidth>
         <div id="product"></div>
-      <Infographic id="product" title={InfographicContent.title} blocks={infographicBlocks} />
+      {/* <Infographic id="product" title={InfographicContent.title} blocks={infographicBlocks} /> */}
 
         <MiddleBlock 
           title={MiddleBlockContent.title}
